@@ -1,0 +1,282 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+/* Ronnie Font */
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #0C0C0C;
+}
+
+/* HEADER */
+.header-container{
+    background-color: #0C0C0C;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+    width: 100%;
+    max-width: 120rem; 
+    position: fixed;
+    z-index: 99;
+}
+
+.header-container h1{
+    font-size:  2.5em;
+    color: #5F9BF5;
+    font-family: 'Allura', cursive;
+}
+
+.header-container a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-right: 3rem;
+    font-weight: lighter;
+    display: inline-block;
+    position: relative;
+}
+ 
+.header-container a:after {
+   content: '';
+   position: absolute;
+   width: 100%;
+   transform: scaleX(0);
+   height: 0.125em;
+   bottom: 0;
+   left: 0;
+   background-color: white;
+   transform-origin: bottom right;
+   transition: transform 0.5s ease-out;
+   transition: transform 0.5s ease-in;
+ }
+ 
+ .header-container a:hover:after {
+   transform: scaleX(1);
+   transform-origin: bottom left; 
+ }
+
+.header-container button{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em; 
+    background-color: #5F9BF5;
+    border: 0.0625rem solid #5F9BF5;
+    border-radius: 2rem;
+    padding: .8rem 2.3rem;
+    cursor: pointer;
+}
+
+.header-container button:hover{
+    background-color: white;
+    border: 0.0625rem solid white;
+    color: #0C0C0C;
+}
+
+.inpt1{
+    font-size: 1.2em;
+    background-color:#0C0C0C;
+    border: none;
+    border-bottom: 0.125em solid white;
+    padding-left: 2.2rem;
+    background: url(images/search.svg) no-repeat;
+    background-size: 1.5rem;
+    background-position: -.1rem;
+    color: white;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    width: 10rem;
+}
+
+::placeholder{
+    color: white;
+    opacity: 1;
+    text-decoration: none;
+}
+
+.header-container input:focus-within{ 
+    outline: none;
+}
+
+/* SECTION 1 */
+.hero{
+    width: 100%;
+    max-width: 120rem;
+    padding-top: 6rem;
+    background: linear-gradient( to right,
+            rgba(12, 12, 12, 1)15%,
+            rgba(12, 12, 12, .7) 25%,
+            rgba(12, 12, 12, 0))100%, 
+            url(images/Ronnie.png);  
+    background-repeat: no-repeat;
+    background-position: 35% bottom;
+    background-size: 60vh;
+    background-color:#0C0C0C;
+    position: relative;
+}
+
+.section1{
+    height: 80vh;
+    width: 91%;
+    margin: auto;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section1 h2{
+    font-size: 1.4em;
+    font-weight: lighter;
+}
+
+.section1 h1{
+    font-size: 3.5em;
+    color: #5F9BF5;
+    font-weight: 600;
+    margin-bottom: .8rem;
+}
+
+.p1{
+    font-size: 1em;
+    width: 34rem;
+    margin-bottom: 5rem;
+}
+
+.div1sect1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-basis: 99%;
+}
+
+.div2sect1{
+    display: flex;
+    align-items: center;
+}
+
+.div2sect1 button{
+    border: 0.0625rem solid white;
+    border-radius: 2rem;
+    background-color: #333333;
+    color: white;
+    padding: 1.1rem 2.7rem;
+    font-weight: bold;
+    margin-right: 2rem;
+    font-size: 1.2em;
+    cursor: pointer;
+    box-shadow: 0rem 3.2rem 3rem #222222; 
+}
+
+.div2sect1 .bi{
+    font-size: 2.3em;
+    border: 0.0625rem solid white;
+    border-radius: 100%;
+    background-color: #333333; 
+    padding: .4rem .9rem;
+    cursor: pointer;
+    box-shadow: 0rem 3.2rem 3rem #222222; 
+}
+
+.div3sect1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div3sect1 h1{
+    writing-mode:vertical-rl;
+    transform: rotate(-180deg);
+    display: inline-block;
+    position: relative;
+    color: white;
+    font-size: 2em;
+    font-weight: lighter;
+    width: 3rem;
+    text-align: center;
+    margin-top: .7rem;
+}
+
+.div3sect1 h1::after, .div3sect1 h1::before{
+    content: '';
+    position: absolute;
+    width: 14rem;
+    height: 0.125rem;
+    background-color: white;
+    transform: rotate(90deg);
+    right: -5.5rem;
+}
+
+.div3sect1 h1::after{
+    bottom: -8.6rem;
+}
+
+.div3sect1 h1::before{
+    top: -8.6rem;
+}
+
+.div3sect1 img{
+    height: 1rem;
+}
+
+.div2sect1 button:hover{
+    background-color: white;
+    color: #0C0C0C;
+    }
+
+.div2sect1 .bi:hover{
+background-color: white;
+color: #0C0C0C;
+}
+
+/* mid section */
+.circulos{
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    width: 91%;
+    margin: auto;
+}
+
+.cp1, .cp2, .cp3, .cp4{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 1.8em;
+    font-weight: bold;
+    text-align: center;
+    width: 11rem;
+    border-radius: 100%;
+    background-color: #737373c2; 
+    cursor: pointer;
+    box-shadow: 0rem 3.2rem 3rem #222222;
+    position: absolute; 
+}
+
+.cp1, .cp2, .cp3, .cp4{
+    padding: 4.5rem 2rem;
+}
+
+.cp2{
+    left: 21.5rem;
+}
+
+.cp3{
+    left: 37.5rem;
+}
+
+.cp4{
+    left: 53.5rem;
+}
+
+.pc1, .pc2{
+width: 9rem;
+}
