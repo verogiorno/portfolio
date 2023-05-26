@@ -435,7 +435,7 @@ width: 9rem;
     border: 0.0625rem solid white;
     width: 31rem;
     padding: 1.7rem;
-    box-shadow: 0rem 3.2rem 3rem #494949;
+    box-shadow: 0rem 2rem 2rem #494949;
 }
 
 .divconts3 h3, .divconts3 p{
@@ -451,6 +451,24 @@ width: 9rem;
 .divconts3 p{
     font-size: 1.4em;
     margin-bottom: 1.5rem;
+}
+
+.s3btn{
+display: flex;
+justify-content: center;
+}
+
+.s3btn button{
+    margin-top: 4rem;
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+    background-color: #5F9BF5;
+    border: 0.0625rem solid #5F9BF5;
+    border-radius: 2rem;
+    padding: .9rem 2.4rem;
+    cursor: pointer;
+    margin-bottom: 3rem;
 }
 
 /* SECTION 4 */
