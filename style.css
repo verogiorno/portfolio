@@ -254,11 +254,8 @@ color: #0C0C0C;
     border-radius: 100%;
     background-color: #737373c2; 
     box-shadow: 0rem 3.2rem 3rem #454545;
-    position: absolute; 
-}
-
-.cp1, .cp2, .cp3, .cp4{
-    padding: 4.5rem 2rem;
+    position: absolute;
+    padding: 4.5rem 2rem; 
 }
 
 .cp1{
@@ -306,7 +303,7 @@ width: 9rem;
     height: 40rem;
     margin: 10rem 6.5rem;
     background-color: #0C0C0C;
-    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50% ;
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
 }
 
 .contblob1{
@@ -316,6 +313,7 @@ width: 9rem;
 .contblob2{
     position: absolute;
 }
+
 .imgblackbg2{
     width: 40rem;
     height: 39rem;
@@ -324,11 +322,6 @@ width: 9rem;
     border-radius: 50% 50% 17% 50% / 50% 50% 15% 50%;
     transform: rotate(.2rad);
     top: 90%;
-}
-
-.s2divbot{
-    width: 89%;
-    margin: auto;
 }
 
 .s2divdrc{
@@ -341,7 +334,6 @@ width: 9rem;
     position: relative;
     left: 2.5rem;
     top: -7.5rem;
-
 }
 
 .s2h3{
@@ -366,23 +358,100 @@ width: 9rem;
     margin-bottom: .5rem;
 }
 
-.s2divbot h1, .s2divdrc h1{
+.s2divdrc h1{
     font-size: 3.5em;
     margin-bottom: 1rem;
     line-height: 5rem;
-    width: 80%;
-    
+    width: 80%; 
 }
 
-.s2divbot p, .s2divdrc p{
+.s2divdrc p{
     font-size: 1.2em; 
-}
-
-.s2divbot p{
-    width: 45%;
-    margin-bottom: 2rem;
 }
 
 .s2divdrc p{
     width: 80%;
+    font-weight: bold;
 }
+
+/* Section 3 */
+.section3{
+    background-color: #333333;
+    color: white;
+    width: 100%;
+    max-width: 120rem;
+}
+
+.s3divbot{
+    width: 89%;
+    margin: auto;
+    margin-bottom: 6rem;
+}
+
+.s3divbot h1{
+    font-size: 3.5em;
+    margin-bottom: 1rem;
+    line-height: 5rem;
+    width: 80%; 
+}
+
+.s3divbot p{
+    font-size: 1.2em;
+    width: 45%;
+    padding-bottom: 4rem; 
+}
+
+.divconts3{
+    width: 89%;
+    margin: auto;
+    display: flex;
+    text-align: center;
+}
+
+.subdivconts3{
+    width: 33%;
+    margin: auto;
+    position: relative;
+}
+
+.s3i1, .s3i2, .s3i3{
+    width: 6rem;
+}
+
+.s3icons1, .s3icons2, .s3icons3{
+    border-radius: 100%;
+    background-color: white;
+    padding: 3.5rem 2rem;
+    width: 9rem;
+    position: absolute;
+    top: -22%;
+    z-index: 1;
+    left: 30%;
+}
+
+.s3cards{
+    background-color: #707070;
+    border-radius: 2rem;
+    border: 0.0625rem solid white;
+    width: 31rem;
+    padding: 1.7rem;
+    box-shadow: 0rem 3.2rem 3rem #494949;
+}
+
+.divconts3 h3, .divconts3 p{
+    font-weight: bold;
+}
+
+.divconts3 h3{
+    font-size: 1.7em;
+    margin-bottom: 3rem;
+    margin-top: 5.5rem;
+}
+
+.divconts3 p{
+    font-size: 1.4em;
+    margin-bottom: 1.5rem;
+}
+
+/* SECTION 4 */
+
