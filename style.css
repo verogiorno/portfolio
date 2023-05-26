@@ -11,9 +11,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body{
-    background-color: #0C0C0C;
-}
 
 /* HEADER */
 .header-container{
@@ -125,7 +122,7 @@ body{
 
 .section1{
     height: 80vh;
-    width: 91%;
+    width: 89%;
     margin: auto;
     color: white;
     display: flex;
@@ -237,12 +234,12 @@ background-color: white;
 color: #0C0C0C;
 }
 
-/* mid section */
+/* mid-section */
 .circulos{
     display: flex;
     justify-content:left;
     align-items: center;
-    width: 91%;
+    width: 89%;
     margin: auto;
 }
 
@@ -256,8 +253,7 @@ color: #0C0C0C;
     width: 11rem;
     border-radius: 100%;
     background-color: #737373c2; 
-    cursor: pointer;
-    box-shadow: 0rem 3.2rem 3rem #222222;
+    box-shadow: 0rem 3.2rem 3rem #454545;
     position: absolute; 
 }
 
@@ -265,18 +261,128 @@ color: #0C0C0C;
     padding: 4.5rem 2rem;
 }
 
+.cp1{
+    left: 6.5rem;
+}
+
 .cp2{
-    left: 21.5rem;
+    left: 22.5rem;
 }
 
 .cp3{
-    left: 37.5rem;
+    left: 38.5rem;
 }
 
 .cp4{
-    left: 53.5rem;
+    left: 54.5rem;
 }
 
 .pc1, .pc2{
 width: 9rem;
+}
+
+/* Section 2 */
+.section2{
+    background-color: #333333;
+    color: white;
+    width: 100%;
+    max-width: 120rem; 
+}
+
+.divsection2{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionblob{
+    display: flex;
+}
+
+.imgblackbg{
+    width: 40rem;
+    height: 40rem;
+    margin: 10rem 6.5rem;
+    background-color: #0C0C0C;
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50% ;
+}
+
+.contblob1{
+    position: relative;  
+}
+
+.contblob2{
+    position: absolute;
+}
+.imgblackbg2{
+    width: 40rem;
+    height: 39rem;
+    margin: 10rem 6.5rem;
+    background-color: #0C0C0C;
+    border-radius: 50% 50% 17% 50% / 50% 50% 15% 50%;
+    transform: rotate(.2rad);
+    top: 90%;
+}
+
+.s2divbot{
+    width: 89%;
+    margin: auto;
+}
+
+.s2divdrc{
+    padding-top: 4rem;
+    width: 50%;
+    margin: auto;
+}
+
+.lineaboutme{
+    position: relative;
+    left: 2.5rem;
+    top: -7.5rem;
+
+}
+
+.s2h3{
+    font-size: 1.4em;
+    writing-mode:vertical-rl;
+    transform: rotate(-180deg);
+}
+
+.s2h3::before{
+    content: '';
+    width: 7rem;
+    height: 0.125rem;
+    background-color: white;
+    position: absolute;
+    transform: rotate(90deg);
+    top: -4rem;
+    left: -2.5rem;
+}
+
+.s2divizq h2{
+    font-size: 1.7em;
+    margin-bottom: .5rem;
+}
+
+.s2divbot h1, .s2divdrc h1{
+    font-size: 3.5em;
+    margin-bottom: 1rem;
+    line-height: 5rem;
+    width: 80%;
+    
+}
+
+.s2divbot p, .s2divdrc p{
+    font-size: 1.2em; 
+}
+
+.s2divbot p{
+    width: 45%;
+    margin-bottom: 2rem;
+}
+
+.s2divdrc p{
+    width: 80%;
 }
