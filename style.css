@@ -120,14 +120,14 @@ section [id]{
     width: 100%;
     max-width: 120rem;
     padding-top: 6rem;
-    background: linear-gradient( to right,
-            rgba(12, 12, 12, 1)15%,
+    background: linear-gradient( to bottom,
+            rgba(12, 12, 12, 1)21%,
             rgba(12, 12, 12, .7) 25%,
             rgba(12, 12, 12, 0))100%, 
             url(images/Ronnie.png);  
     background-repeat: no-repeat;
-    background-position: 35% bottom;
-    background-size: 60vh;
+    background-position: 43% bottom;
+    background-size: 53vh;
     background-color:#0C0C0C;
     position: relative;
 }
@@ -245,9 +245,9 @@ section [id]{
 }
 
 .div2sect1 .bi:hover{
-background-color: white;
-color: #0C0C0C;
-transition: .5s;
+    background-color: white;
+    color: #0C0C0C;
+    transition: .5s;
 }
 
 /* mid-section */
@@ -334,10 +334,18 @@ width: 9rem;
     width: 48rem;
     height: 47rem;
     margin: 10rem 6.5rem;
-    background-color: #0C0C0C;
     border-radius: 50% 50% 17% 50% / 50% 50% 15% 50%;
     transform: rotate(.2rad);
     top: 90%;
+    background: linear-gradient( to bottom,
+    rgba(12, 12, 12, 1)20%,
+    rgba(12, 12, 12, .7) 36%,
+    rgba(12, 12, 12, 0))100%, 
+    url(images/Ronnie.png) no-repeat;
+    background-color: #0C0C0C;
+    background-position: bottom -15% left 50%;
+    transform: rotate(.1rad);
+    background-size: 43vh;
 }
 
 .s2divdrc{
@@ -456,7 +464,11 @@ width: 9rem;
     border: 0.0625rem solid white;
     width: 31rem;
     padding: 1.7rem;
+}
+
+.s3cards:hover{
     box-shadow: 0rem 2rem 2rem #494949;
+    transition: .5s;
 }
 
 .divconts3 h3, .divconts3 p{
@@ -539,6 +551,12 @@ width: 9rem;
     border-bottom-right-radius: 1.5rem;
     border-top-right-radius: 3rem;
     border: 0.0625rem solid white;
+}
+
+.s4cards1:hover, .s4cards2:hover, .s4cards3:hover{
+    box-shadow: 0rem 2rem 2rem #494949;
+    transform: scale(1.05);
+    transition: .5s;
 }
 
 .projects{
@@ -624,6 +642,96 @@ width: 9rem;
 
 
 .contcards a:hover{
+    background-color: white;
+    border: 0.0625rem solid white;
+    color: #0C0C0C;
+    transition: .5s;
+}
+
+/* Section 5 */
+.section5{
+    width: 100%;
+    max-width: 120rem;
+    padding-top: 6rem;
+    background-color: #333333;
+    color: white;
+    background: url(images/Snow_White-removebg-preview.png) no-repeat;
+    background-size: 39vh;
+    background-color: #333333;
+    background-position: right 15% top 25%;
+}
+
+.divocnts5{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.divocnts5 h1{
+    font-size: 3em;
+    margin-bottom: 1rem;
+}
+
+.divocnts5 h2{
+    font-size: 1.3em;
+}
+
+.s5p{
+    font-size: 1.1em;
+    margin-bottom: 2.5rem;
+    width: 50rem;
+}
+
+.s5-cont-lista{
+    width: 52rem;
+}
+
+.skills{
+    font-size: 1.1em;
+}
+
+.s5-list{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+    border-radius: 4rem 0 4rem 0rem;
+}
+
+.s5-list:hover{
+    box-shadow: 0rem 1.5rem 2em #494949;
+    transition: .5s;
+}
+
+.s5-list-items{
+    font-size: 2.3em;
+    border: 0.0625em solid white;
+    border-radius: 100% 0% 100% 100% / 100% 0% 100% 0%;
+    background-color: #5C5C5C;
+    padding: 2.5rem 2rem;
+    width: 6rem;
+    text-align: center;
+    margin-right: 1.5rem;
+}
+
+.s5btn{
+    display: flex;
+    justify-content: center;
+}
+
+.s5btn a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+    background-color: #5F9BF5;
+    border: 0.0625rem solid #5F9BF5;
+    border-radius: 2rem;
+    padding: .9rem 2.4rem;
+    cursor: pointer;
+    margin-bottom: 3rem;
+}
+
+.s5btn a:hover{
     background-color: white;
     border: 0.0625rem solid white;
     color: #0C0C0C;
