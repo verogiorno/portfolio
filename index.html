@@ -20,20 +20,20 @@
             <div class="header-container">
                 <h1>Ronnie</h1>
                 <nav>
-                    <a href="#">Inicio</a>
-                    <a href="">Acerca de</a>
-                    <a href="">Servicio</a>
-                    <a href="">Portfolio</a>
+                    <a class="aheader" href="#inicio">Inicio</a>
+                    <a class="aheader" href="#acerca-de">Acerca de</a>
+                    <a class="aheader" href="#servicio">Servicio</a>
+                    <a  class="aheader"href="#portfolio">Portfolio</a>
                 </nav>
                 <input class="inpt1" type="search" placeholder="Buscar...">
-                <button>Hablemos</button>
+                <a class="btnheader" href="#contactame">Hablemos</a>
             </div>
         </section>
     </header>
     <!-- MAIN -->
     <main>
         <!-- Section 1 -->
-        <section class="hero">
+        <section class="hero" id="inicio">
             <div class="section1">
                 <div class="div1sect1">
                     <h2>Hola, soy</h2>
@@ -41,8 +41,8 @@
                     <p class="p1">Soy diseñadora web y profesora de Inglés de nivel primario y secundario, dispuesta a resolver tus necesidades y brindarte el mejor servicio.</p>
 
                     <div class="div2sect1">
-                        <button>Contratame</button>
-                        <i class="bi bi-caret-right-fill"></i>    
+                        <a class="asec1" href="#contactame">Contratame</a>
+                        <a  href="#portfolio"><i class="bi bi-caret-right-fill"></i>  </a>  
                     </div>
                 </div>
 
@@ -73,7 +73,7 @@
             </div>
         </div>
         <!-- Section 2 -->
-        <section class="section2">
+        <section class="section2" id="acerca-de">
             <div class="divsection2">
                 <div class="sectionblob">
                     <div class="contblob1">
@@ -92,13 +92,13 @@
                 
                 <div class="s2divdrc">
                     <h1>Si Necesitas Un Diseño Creativo Puedo Ayudarte</h1>
-                    <p>Hola, soy Verónica Giorno, Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum at quo asperiores magnam dolores mollitia reiciendis vel fugiat sint amet quas, ea numquam eos hic ducimus sed voluptatem perferendis assumenda? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et aperiam ut repellendus exercitationem dicta. Corrupti pariatur sed nostrum, illum consectetur magnam eius officia neque ad vero modi rerum? Quibusdam, cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quasi molestias? Repellat deserunt minus illum minima nihil assumenda qui ducimus autem dolore! Ipsum ullam, et dolores quisquam alias adipisci similique. Lorem ipsum dolor sit, amet consectetur adipisicing elit. At veritatis laboriosam nam repellat facilis voluptas hic ab autem ut doloremque, expedita accusamus animi iste reprehenderit! Similique atque nesciunt est iste!</p>
+                    <p>Hola, soy Verónica Giorno, Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum at quo asperiores magnam dolores mollitia reiciendis vel fugiat sint amet quas, ea numquam eos hic ducimus sed voluptatem perferendis assumenda? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et aperiam ut repellendus exercitationem dicta. Corrupti pariatur sed nostrum, illum consectetur magnam eius officia neque ad vero modi rerum? Quibusdam, cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quasi molestias? </p>
                 </div>
             </div>
 
         </section>
         <!-- Section 3 -->
-        <section class="section3">
+        <section class="section3" id="servicio">
             <div class="s3divbot">
                 <h2>Mi Servicio</h2>
                 <h1>Lo que Hago</h1>
@@ -137,49 +137,65 @@
                 </div>
             </div>
             <div class="s3btn">
-                <button>Ver todo</button>                
+                <a>Ver todo</a>                
             </div>
 
         </section>
         <!-- Section 4 -->
-        <section>
-            <h1>Mis proyectos Recientes</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui ducimus iste sint eveniet incidunt architecto delectus esse accusantium.</p>
-            <div>
+        <section class="section4" id="portfolio">
+            <div class="conts4">
+                <h1>Mis proyectos Recientes</h1>
+                <p class="s4p1">El desarrollo web front-end es la conversión de datos en una interfaz gráfica para que el usuario pueda ver e interactuar con la información de forma digital usando HTML, CSS y JavaScript</p>
                 <div>
-                    <img src="" alt="">
-                    <h2></h2>
-                    <p></p>
-                    <div>
-                        <button></button>
-                        <img src="images/star-fill.svg" alt="">
-                        <p>0 (0 reviews)</p>
+                <div class="contcards">
+                    <div class="s4cards1">
+                        <img class="projects" src="images/Giftify.png" alt="">
+                        <h2>Shopping Website</h2>
+                        <p>Todo regalo que se da, aunque sea pequeño, en realidad es grande si se da con cariño.</p>
+                        <div class="reviews">
+                            <a href="https://verogiorno.github.io/GIOTNO-TP1-Giftfy/"
+                            target="_blank">Ver en GitHub</a>
+                            <div class="r2">    
+                                <img class="star" src="images/star-fill.svg" alt="">
+                                <p>0 (0 reviews)</p>
+                            </div>    
+                        </div>
+                    </div>
+    
+                    <div class="s4cards2">
+                        <img class="projects" src="images/Ivyre.png" alt="">
+                        <h2>Fashion Website</h2>
+                        <p>La moda es perdurable y atemporal como el estilo y buen gusto innato en una mujer.</p>
+                        <div class="reviews">
+                                <a href="https://verogiorno.github.io/verogiorno-tp2ivyre/"
+                                target="_blank">Ver en GitHub</a>
+                            <div class="r2">
+                                <img class="star" src="images/star-fill.svg" alt="">
+                                <p>0 (0 reviews)</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="s4cards3">
+                        <img class="projects" src="images/Lark Homes.png" alt="">
+                        <h2>Propiedades Website</h2>
+                        <p>La más amplia cartera de propiedades en venta, búsquedas personalizadas de casas.</p>
+                        <div class="reviews">
+                            <a href="https://verogiorno.github.io/tp3/"
+                            target="_blank">Ver en GitHub</a>
+                        <div class="r2">
+                            <div class="r2">
+                                <img class="star" src="images/star-fill.svg" alt="">
+                                <p>0 (0 reviews)</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-                <div>
-                    <img src="" alt="">
-                    <h2></h2>
-                    <p></p>
-                    <div>
-                        <button></button>
-                        <img src="images/star-fill.svg" alt="">
-                        <p>0 (0 reviews)</p>
-                    </div>
-                </div>
-
-                <div>
-                    <img src="" alt="">
-                    <h2></h2>
-                    <p></p>
-                    <div>
-                        <button></button>
-                        <img src="images/star-fill.svg" alt="">
-                        <p>0 (0 reviews)</p>
-                    </div>
+                </div>    
+                <div class="s4btn">
+                    <a>Ver todo</a>
                 </div>
             </div>
-            <button>Ver todo</button>
         </section>
         <!-- Section 5 -->
         <section>
@@ -216,14 +232,14 @@
             <div>
                 <img src="images/Snow_White-transformed.png" alt="">
             </div>
-            <button>Ver todo</button>
+            <a>Ver todo</a>
         </section>
         <!-- Section 6 -->
-        <section>
+        <section class="section6" id="#contactame">
             <div>
                 <h1>Estoy Disponible para Continuar Cualquier Proyecto</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque eveniet tenetur explicabo provident suscipit illum rem.</p>
-                <button>Contratame</button>
+                <a href="#contactame">Contratame</a>
             </div>
         </section>    
         <!-- Section 7 -->
@@ -255,7 +271,7 @@
                 </div>
             </div>
             <input type="text" name="" id="" placeholder="Message...">
-            <button>Enviar</button>
+            <a>Enviar</a>
         </section>
     </main>
         <!-- Footer -->
@@ -266,7 +282,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus asperiores ipsam autem fugiat ab ducimus cumque voluptatem recusandae eligendi. Vero libero voluptatibus molestias quas omnis blanditiis maiores non, veniam nemo.</p>
                 <div>
                     <input type="email" placeholder="Ingresá tu Email">
-                    <button>Suscribite</button>
+                    <a>Suscribite</a>
                 </div>
                 <div>
                     <img src="images/icons8-facebook.svg" alt="">
