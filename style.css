@@ -29,9 +29,13 @@ html{
     height: 3.5rem;
 }
 
-.ronnie, .chrome{
+.ronnie {
     font-size:  2.5em;
     font-family: 'Allura', cursive;
+}
+
+.burger{
+    display: none;
 }
 
 .ronnie{
@@ -902,7 +906,7 @@ width: 9rem;
     padding: 2rem 0rem 11rem 2rem;
     border-radius: 1rem;
     margin-bottom: 3rem;
-    align-content: center;
+    text-align: left;
 }
 
 .s7btn{
@@ -935,7 +939,6 @@ width: 9rem;
 .sfooter{
     width: 100%;
     max-width: 120rem;
-    padding: 0rem 6rem 0rem 0rem;
     background-color: #333333;
     color: white;
     display: flex;
@@ -1034,4 +1037,21 @@ width: 9rem;
 .div-socialmedia img:hover{
     transform: scale(1.05);
     transition: .5s;
+}
+
+/* Sector Media Queries */
+/* Desktop */
+
+@media screen and (min-width: 1024px) {
+    
+}
+
+/* Tablet */
+@media screen and (min-width: 76804px) and (max-width:1023px) {
+    
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+    
 }
