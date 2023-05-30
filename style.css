@@ -232,6 +232,7 @@ input:focus::placeholder{
 .section1 h2{
     font-size: 1.6em;
     font-weight: lighter;
+    width: 40%;
 }
 
 .section1 h1{
@@ -239,12 +240,13 @@ input:focus::placeholder{
     color: #5F9BF5;
     font-weight: 600;
     margin-bottom: .8rem;
+    width: 40%;
 }
 
 .p1{
     font-size: 1.2em;
-    width: 40rem;
     margin-bottom: 5rem;
+    width: 40%;
 }
 
 .div1sect1{
@@ -358,23 +360,24 @@ input:focus::placeholder{
     background-color: #737373c2; 
     box-shadow: 0rem 3.2rem 3rem #454545;
     position: absolute;
-    padding: 4.5rem 2rem; 
+    padding: 4.5rem 2rem;
+     
 }
 
 .cp1{
-    left: 6.5rem;
+    left: 5.5%;
 }
 
 .cp2{
-    left: 22.5rem;
+    margin-left: 16rem;
 }
 
 .cp3{
-    left: 38.5rem;
+    margin-left: 32rem;
 }
 
 .cp4{
-    left: 54.5rem;
+    margin-left: 48rem;
 }
 
 .pc1, .pc2{
@@ -904,8 +907,9 @@ width: 9rem;
 
 .conts7top{
     width: 79%;
-    margin: auto;
-    margin: 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2.5rem;
     margin-top: 6rem;
     display: flex;
     flex-direction: column;
@@ -927,7 +931,6 @@ width: 9rem;
 
 .conts7mid{
     width: 70%;
-    margin: auto;
     display: flex;
     justify-content: space-around;
     border-radius: 1rem;
@@ -944,7 +947,6 @@ width: 9rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 1rem;
 }
 
 .section7 input{
@@ -960,13 +962,21 @@ width: 9rem;
     margin-bottom: 2rem;
 }
 
-.conts7bot input{
-    width: 85%;
+.inpt-message{
+    background-color: #474747;
+    color: white;
+    border: 0.0625rem solid #919190;
+    width: 86%;
+    height: 13rem;
     font-size: 1.5em;
-    padding: 2rem 0rem 11rem 2rem;
+    padding: 2rem 0rem 0rem 1rem;
     border-radius: 1rem;
     margin-bottom: 3rem;
     text-align: left;
+}
+
+.inpt-message:focus-within{ 
+    outline: none;
 }
 
 .s7btn{
@@ -1102,13 +1112,7 @@ width: 9rem;
 /* Sector Media Queries */
 /* Desktop */
 
-@media screen and (min-width: 1024px){
-    /* header */
-    
-}
-
-/* Tablet */
-@media screen and (min-width: 768px) and (max-width:1023px){
+@media screen and (min-width: 768px) and (max-width:1024px){
     /* header */
     nav, .inpt1, .btnheader{
         display: none;
@@ -1145,12 +1149,90 @@ width: 9rem;
        
     .burger{
         display: block;
-       }    
+       } 
+       
+       
+       /* Section 1 */
+
+    .p1{
+        width: 55%;
+    }
 }
 
-/* Mobile */
+@media screen and (max-width: 1195px) {
+
+    /* Section 1 */
+        .div3sect1 h1::after, .div3sect1 h1::before{
+            content: '';
+            width: 7.5rem;
+            right: -2.2rem;
+    }
+    
+        .div3sect1 h1::after{
+            bottom: -5.3rem;
+    }
+    
+        .div3sect1 h1::before{
+            top: -5.3rem;
+    }
+    }
+
+@media screen and (max-width: 1180px){
+/* Mid Section */
+    .cp2{
+        display: none;
+        }
+       
+    .cp3{
+        margin-left: 20rem;
+        }
+       
+    .cp4{
+        margin-left: 40rem;
+        }
+    }
+
+@media screen and (max-width: 1135px){
+/* Mid Section */
+    .cp3{
+         margin-left: 20rem;
+        }       
+}
+
+@media screen and (max-width: 990px) {
+  
+/* Mid Section */
+.cp1{
+    margin-left: 0%;
+}
+
+.cp3{
+    margin-left: 18.5rem;
+    }
+    
+.cp4{
+    margin-left: 37rem;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+/* Mid Section */
+    .cp1{
+        margin-left: -4.5%;
+        }
+    
+    .cp3{
+        margin-left: 13.5rem;
+        }
+        
+    .cp4{
+        margin-left: 29.5rem;
+        }
+}
+
 @media screen and (max-width: 767px){
-    /* header */
+/* header */
     .header-container{
         width: 90%;
         max-width: 47.9375rem;
@@ -1167,4 +1249,42 @@ width: 9rem;
     .burger{
         display: block;
        }
+
+       /* Section 1 */
+    .hero{
+        padding-top: 2rem;
+       }
+
+    .section1{
+        height: 100vh;
+        width: 100%;
+        max-width: 47.9375rem;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.1);
+        padding-left: .7rem;
+    }
+
+    .section1 h2{
+        margin-bottom: 2rem;
+    }
+    
+    .section1 h1{
+        line-height: 5rem;
+        margin-bottom: 2rem;
+    }
+    
+    .p1{
+        margin-bottom: 5rem;
+    }
+
+    .div3sect1{
+        display: none;
+    }
+
+    .circulos{
+        display: none;
+    }
 }
