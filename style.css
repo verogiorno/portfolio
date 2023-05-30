@@ -12,6 +12,10 @@
     list-style: none;
 }
 
+section [id] {
+    scroll-margin-top: 4rem;
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -361,7 +365,6 @@ input:focus::placeholder{
     box-shadow: 0rem 3.2rem 3rem #454545;
     position: absolute;
     padding: 4.5rem 2rem;
-     
 }
 
 .cp1{
@@ -386,6 +389,7 @@ width: 9rem;
 
 /* Section 2 */
 .section2{
+    padding-top: 1rem;
     background-color: #333333;
     color: white;
     width: 100%;
@@ -494,7 +498,7 @@ width: 9rem;
     color: white;
     width: 100%;
     max-width: 120rem;
-    padding-top: 6rem;
+    padding-top: 2.5rem;
 }
 
 .s3divbot{
@@ -636,7 +640,7 @@ width: 9rem;
     margin-bottom: 4rem;
 }
 
-.s4cards1, .s4cards2, .s4cards3{
+.s4cards1, .s4cards2, .s4cards3, .s4cards4, .s4cards5, .s4cards6{
     width: 30%;
     background-color: #474747;
     border-bottom-left-radius: 1.5rem;
@@ -645,7 +649,7 @@ width: 9rem;
     border: 0.0625rem solid white;
 }
 
-.s4cards1:hover, .s4cards2:hover, .s4cards3:hover{
+.s4cards1:hover, .s4cards2:hover, .s4cards3:hover, .s4cards4:hover, .s4cards5:hover, .s4cards6:hover{
     box-shadow: 0rem 2rem 2rem #494949;
     transition: .5s;
 }
@@ -656,6 +660,11 @@ width: 9rem;
     border-top-right-radius: 3rem;
     border-bottom-left-radius: 3rem;
     box-sizing: border-box;
+}
+
+.contcards{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 }
 
 .contcards h2{
@@ -837,8 +846,8 @@ width: 9rem;
     max-width: 120rem;
     background-color: #333333;
     color: white;
-    padding-top: 11rem;
-    padding-bottom: 11rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     display: flex;
     justify-content: center;
 }
@@ -910,7 +919,7 @@ width: 9rem;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2.5rem;
-    margin-top: 6rem;
+    margin-top: 0rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1041,52 +1050,6 @@ width: 9rem;
     width: 45%;
     margin-bottom: 4rem;
     text-align: center;
-}
-
-.div-email{
-    width: 90%;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;  
-    margin-bottom: 3rem;  
-}
-
-.div-email input{
-    background-color: #474747;
-    color: white;
-    font-size: 1.5em;
-    padding: 1.5rem 3rem 1.5rem 8rem;
-    border-radius: 4rem;
-    margin-bottom: 2rem;
-    margin-right: 4rem;
-    box-shadow: 0rem 2.5rem 3rem #454545;
-    border: 0.0625rem solid white;
-}
-
-.sfbtn{
-    display: flex;
-    justify-content: center;
-}
-
-.sfbtn a{
-    text-decoration: none;
-    color: white;
-    font-size: 1.7em;
-    background-color: #5F9BF5;
-    border: 0.0625rem solid #5F9BF5;
-    border-radius: 4rem;
-    padding: 1.5rem 4.5rem;
-    cursor: pointer;
-    margin-bottom: 2rem;
-    box-shadow: 0rem 2.5rem 3rem #454545;
-}
-
-.sfbtn a:hover{
-    background-color: white;
-    border: 0.0625rem solid white;
-    color: #0C0C0C;
-    transition: .5s;
 }
 
 .div-socialmedia{
