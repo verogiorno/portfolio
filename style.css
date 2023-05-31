@@ -20,6 +20,10 @@ html{
     scroll-behavior: smooth;
 }
 
+body{
+    background-color: #0C0C0C;
+}
+
 /* HEADER */
 .sheader{
     background-color: #0C0C0C;
@@ -210,17 +214,18 @@ input:focus::placeholder{
 .hero{
     width: 100%;
     max-width: 120rem;
-    padding-top: 6rem;
-    background: linear-gradient( to bottom,
-            rgba(12, 12, 12, 1)21%,
-            rgba(12, 12, 12, .7) 25%,
-            rgba(12, 12, 12, 0))100%, 
-            url(images/Ronnie.png);  
-    background-repeat: no-repeat;
-    background-position: 43% bottom;
-    background-size: 53vh;
-    background-color:#0C0C0C;
     position: relative;
+    z-index: 1;
+    padding-top: 7rem;
+}
+
+.gradient{
+    width: 100%;
+    height: 86vh;
+    background: rgb(12,12,12);
+    background: linear-gradient(180deg, rgba(12,12,12,1) 94%, rgba(46,46,46,1) 99%); 
+    position: absolute; 
+    z-index: -2;
 }
 
 .section1{
@@ -231,6 +236,15 @@ input:focus::placeholder{
     display: flex;
     justify-content: center;
     align-items: center;
+    background: linear-gradient( to bottom,
+    rgba(12, 12, 12, 1) 5%,
+    rgba(12, 12, 12, .7) 25%,
+    rgba(12, 12, 12, 0))100%, 
+    url(images/Ronnie.png);  
+    background-repeat: no-repeat;
+    background-position: 43% 100%;
+    background-size: 53vh;
+    z-index: 1;
 }
 
 .section1 h2{
@@ -343,6 +357,7 @@ input:focus::placeholder{
     transition: .5s;
 }
 
+
 /* mid-section */
 .circulos{
     display: flex;
@@ -365,6 +380,7 @@ input:focus::placeholder{
     box-shadow: 0rem 3.2rem 3rem #454545;
     position: absolute;
     padding: 4.5rem 2rem;
+    z-index: 4;
 }
 
 .cp1{
@@ -385,6 +401,7 @@ input:focus::placeholder{
 
 .pc1, .pc2{
 width: 9rem;
+
 }
 
 /* Section 2 */
@@ -443,7 +460,7 @@ width: 9rem;
 }
 
 .s2divdrc{
-    padding-top: 4rem;
+    margin-top: 4rem;
     width: 50%;
     margin: auto;
 }
@@ -451,7 +468,7 @@ width: 9rem;
 .lineaboutme{
     position: relative;
     left: -1rem;
-    top: -7.5rem;
+    top: -10.5rem;
 }
 
 .s2h3{
@@ -484,10 +501,7 @@ width: 9rem;
 }
 
 .s2divdrc p{
-    font-size: 1.4em; 
-}
-
-.s2divdrc p{
+    font-size: 1.4em;
     width: 80%;
     font-weight: bold;
 }
@@ -548,7 +562,7 @@ width: 9rem;
     width: 9rem;
     position: absolute;
     top: -22%;
-    z-index: 1;
+    z-index: -1;
     left: 30%;
 }
 
@@ -982,6 +996,7 @@ width: 9rem;
     border-radius: 1rem;
     margin-bottom: 3rem;
     text-align: left;
+    resize: none;
 }
 
 .inpt-message:focus-within{ 
@@ -1096,7 +1111,7 @@ width: 9rem;
 }
 
 @media screen and (min-width: 390px) and (max-width:1200px){
-    /* header */
+/* header */
     .header-container{
         width: 90%;
         max-width:  75rem;
@@ -1122,13 +1137,142 @@ width: 9rem;
     }
 }
 
+@media screen and (max-width: 1903px){
+/* Section 2 */
+    .lineaboutme{
+        top: -13rem;
+    }
+}
+
+@media screen and (max-width: 1848px){
+/* Section 2 */
+    .lineaboutme{
+        top: -14rem; 
+    }
+}
+
+@media screen and (max-width: 1770px){
+/* Section 2 */
+    .lineaboutme{
+        top: -15rem; 
+    }
+}
+
+@media screen and (max-width: 1723px){
+/* Section 2 */
+    .lineaboutme{
+        top: -16rem; 
+    }
+}
+
+@media screen and (max-width: 1677px){
+/* Section 2 */
+    .lineaboutme{
+        top: -17rem; 
+    }
+}
+
+@media screen and (max-width: 1630px){
+/* Section 2 */
+    .lineaboutme{
+        top: -18rem; 
+    }
+}
+
+@media screen and (max-width: 1599px){
+/* Section 2 */
+    .s2divdrc h1{
+        margin-top: 7rem; 
+    }  
+
+    .lineaboutme{
+        top: -15rem;
+    }
+}
+
+@media screen and (max-width: 1593px){
+/* Section 2 */
+    .lineaboutme{
+        top: -16rem; 
+    }
+}
+
+@media screen and (max-width: 1581px){
+/* Section 2 */
+    .lineaboutme{
+        top: -18rem; 
+    }
+}
+
+@media screen and (max-width: 1581px){
+/* Section 2 */
+    .lineaboutme{
+        top: -18.5rem; 
+    }
+}
+
+@media screen and (max-width: 1572px){
+/* Section 2 */
+    .lineaboutme{
+        top: -18.5rem; 
+    }
+
+    .s2divdrc{
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 1559px){
+/* Section 2 */
+    .sectionblob{
+        display: none;
+    }
+
+    .lineaboutme{
+        position: relative;
+        left: 11rem;
+        top: -3rem;
+    }
+
+    .section2{
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    .s2divdrc{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .s2divdrc h1{
+        margin-bottom: 2rem; 
+    }
+}
+
+@media screen and (max-width: 1457px){
+/* Section 2 */
+    .lineaboutme{
+        top: -4rem; 
+    }
+}
+
+@media screen and (max-width: 1420px){
+    /* Section 2 */
+        .lineaboutme{
+             display: none;
+        }
+    }
+
 @media screen and (max-width: 1195px) {
 
-    /* Section 1 */
-        .div3sect1 h1::after, .div3sect1 h1::before{
-            content: '';
-            width: 7.5rem;
-            right: -2.2rem;
+/* Section 1 */
+    .div3sect1 h1::after, .div3sect1 h1::before{
+        content: '';
+        width: 7.5rem;
+        right: -2.2rem;
     }
     
         .div3sect1 h1::after{
@@ -1226,8 +1370,12 @@ width: 9rem;
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: rgba(255, 255, 255, 0.1);
         padding-left: .7rem;
+    }
+ /* Section 2 */
+    .section2{
+        background: rgb(51,51,51);
+        background: linear-gradient(0deg, rgba(51,51,51,1) 87%, rgba(12,12,12,1) 100%); 
     }
 
     .section1 h2{
@@ -1247,7 +1395,25 @@ width: 9rem;
         display: none;
     }
 
+    .gradient{
+    display: none;
+    }
+
+/* Mid Section */
     .circulos{
         display: none;
     }
+
+/* Section 2 */
+.section2{
+    padding-top: 0rem;
+}
+
+.s2divdrc h1{
+    text-align: center; 
+}
+
+.s2divdrc p{
+    text-align: center; 
+}
 }
