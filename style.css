@@ -449,8 +449,8 @@ width: 9rem;
     transform: rotate(.2rad);
     top: 90%;
     background: linear-gradient( to bottom,
-    rgba(12, 12, 12, 1)20%,
-    rgba(12, 12, 12, .7) 30%,
+    rgba(12, 12, 12, 1)35%,
+    rgba(12, 12, 12, .7) 45%,
     rgba(12, 12, 12, 0))100%, 
     url(images/Ronnie.png) no-repeat;
     background-color: #0C0C0C;
@@ -967,12 +967,13 @@ width: 9rem;
     font-size: 1.5em;
     width: 60%;
     text-align: center;
+    margin-bottom: 3rem;
 }
 
 .conts7mid{
     width: 70%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     border-radius: 1rem;
 }
 
@@ -996,6 +997,7 @@ width: 9rem;
 }
 
 .conts7mid input{
+    width: 35rem;
     font-size: 1.5em;
     padding: 1.2rem 1rem 1.2rem 1rem;
     border-radius: .8rem;
@@ -1006,18 +1008,22 @@ width: 9rem;
     background-color: #474747;
     color: white;
     border: 0.0625rem solid #919190;
-    width: 86%;
+    width: 91%;
     height: 13rem;
     font-size: 1.5em;
     padding: 2rem 0rem 0rem 1rem;
     border-radius: 1rem;
-    margin-bottom: 3rem;
     text-align: left;
     resize: none;
+    margin-bottom: 6rem;
 }
 
 .inpt-message:focus-within{ 
     outline: none;
+}
+
+.inpt-message:focus::placeholder{
+    color: transparent;
 }
 
 .s7btn{
@@ -1036,7 +1042,6 @@ width: 9rem;
     cursor: pointer;
     margin-bottom: 2rem;
     box-shadow: 0rem 2.5rem 3rem #454545;
-    
 }
 
 .s7btn a:hover{
@@ -1090,7 +1095,11 @@ width: 9rem;
     align-items: center;  
 }
 
-.div-socialmedia img{
+.div-socialmediah{
+    display: none;
+}
+
+.div-socialmedia img, .div-socialmediah img{
     background-color: #F2F2FB;
     width: 2.3rem;
     border-radius: 1rem;
@@ -1098,12 +1107,12 @@ width: 9rem;
     cursor: pointer;
 }
 
-.div-socialmedia a{
+.div-socialmedia a, .div-socialmediah a{
     margin-right: 1.5rem;
 }
 
-.div-socialmedia img:hover{
-    transform: scale(1.05);
+.div-socialmedia img:hover, .div-socialmediah img:hover{
+    transform: scale(1.1);
     transition: .5s;
 }
 
@@ -1187,13 +1196,24 @@ width: 9rem;
     .subdivconts3-1, .subdivconts3-2{
         margin-right: 10rem;
     }
-
 }
 
 @media screen and (max-width: 1903px){
     /* Section 2 */
     .lineaboutme{
         top: -13rem;
+    }
+
+    /* Section 7 */
+    .inpt-message{
+        width: 92%;
+    }
+}
+
+@media screen and (max-width: 1880px){
+    /* Section 7 */
+    .inpt-message{
+        width: 93%;
     }
 }
 
@@ -1202,12 +1222,27 @@ width: 9rem;
     .lineaboutme{
         top: -14rem; 
     }
+    
+    /* Section 7 */
+.conts7mid input{
+    width: 30rem;
+}
+
+.inpt-message{
+    /* Section 7 */
+    width: 85%;
+}
+
 }
 
 @media screen and (max-width: 1770px){
     /* Section 2 */
     .lineaboutme{
         top: -15rem; 
+    }
+    /* Section 7 */
+    .inpt-message{
+        width: 88%;
     }
 }
 
@@ -1230,6 +1265,11 @@ width: 9rem;
     /* Section 2 */
     .lineaboutme{
         top: -17rem; 
+    }
+
+    /* Section 7 */
+    .inpt-message{
+        width: 91%;
     }
 }
 
@@ -1324,6 +1364,7 @@ width: 9rem;
     .s2divdrc h1{
         margin-bottom: 2rem; 
     }
+
 }
 
 @media screen and (max-width: 1500px){
@@ -1344,6 +1385,15 @@ width: 9rem;
     /* Section 5 */
     .section5{
         background-position: right -1% top 25%;
+    }
+
+    /* Section 7 */
+    .conts7mid input{
+        width: 25rem;
+    }
+
+    .inpt-message{
+        width: 87%;
     }
 }
 
@@ -1392,6 +1442,15 @@ width: 9rem;
     
     .s5-cont-lista{
         width: fit-content;
+    }
+
+    /* Section 7 */
+    .conts7mid input{
+        width: 20rem;
+    }
+
+    .inpt-message{
+        width: 83%;
     }
 }
 
@@ -1496,6 +1555,27 @@ width: 9rem;
 
     .reviews p{
         font-size: .9em;
+    }
+    /* Section 7 */
+    .conts7mid input{
+        width: 15rem;
+    }
+
+    .inpt-message{
+        width: 78%;
+    }
+}
+
+@media screen and (max-width: 1003px){
+    /* Footer */
+
+    .subs h2{
+        text-align: center;
+        align-items: center;
+    }
+
+    .subs p{
+        width: fit-content;
     }
 }
 
@@ -1608,6 +1688,13 @@ width: 9rem;
         margin-bottom: 3rem;
         width: fit-content;
     }
+
+    /* Section 7 */
+    .conts7mid{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 @media screen and (max-width: 799px){
@@ -1705,7 +1792,7 @@ width: 9rem;
         margin-bottom: 0;
     }
 
-/* Section 2 */
+    /* Section 2 */
     .section2{
         background: rgb(51,51,51);
         background: linear-gradient(0deg, rgba(51,51,51,1) 87%, rgba(12,12,12,1) 100%); 
@@ -1723,6 +1810,15 @@ width: 9rem;
         font-size: 1.2em;
         width: fit-content;
         font-weight: lighter;
+    }
+
+    /* Section 7 */
+    .conts7top h1{
+        font-size: 2.4em;
+    }
+    
+    .conts7top p{
+        font-size: 1.2em;
     }
 }
 
@@ -1783,6 +1879,22 @@ width: 9rem;
     .contcards a{
         margin-bottom: 1rem;
     }
+
+    /* Footer */
+    .div-socialmedia{
+        display: none;
+    }
+
+    .div-socialmediah{
+        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ftop{
+        margin-bottom: 1.5rem;
+    }
 }
 
 @media screen and (max-width: 500px){
@@ -1802,6 +1914,11 @@ width: 9rem;
     .conts6{
         width: 40%;
     }
+
+        /* Section 7 */
+        .inpt-message{
+            width: 90%;
+        }
 }
 
 @media screen and (max-width: 445px){
