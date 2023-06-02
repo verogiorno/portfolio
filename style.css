@@ -217,7 +217,7 @@ input:focus::placeholder{
     max-width: 120rem;
     position: relative;
     z-index: 1;
-    padding-top: 7rem;
+    padding-top: 9rem;
     background-color: #0C0C0C;
 }
 
@@ -322,6 +322,8 @@ input:focus::placeholder{
     font-weight: lighter;
     width: 3rem;
     text-align: center;
+    display: flex;
+    align-items: center;
     margin-top: .7rem;
 }
 
@@ -1364,6 +1366,9 @@ width: 9rem;
 }
 
 @media screen and (max-width: 1500px){
+    /* Section 1 */
+
+    
     /* Section 4 */
     .contcards a{
         padding: .9rem 1.7rem;
@@ -1414,6 +1419,10 @@ width: 9rem;
         font-size: 1.1em;
     }
 }
+
+@media screen and (max-width: 1300px){
+
+    
 
 @media screen and (max-width: 1300px){
     /* Section 3 */
@@ -1738,8 +1747,15 @@ width: 9rem;
     }
 
     /* Section 1 */
-    .hero{
-        padding-top: 2rem;
+    .section1{
+    background: linear-gradient( to bottom,
+        rgba(12, 12, 12, 1) 30%,
+        rgba(12, 12, 12, .7) 35%,
+        rgba(12, 12, 12, 0))100%, 
+        url(images/Ronnie.png);  
+        background-repeat: no-repeat;
+        background-position: 43% 100%;
+        background-size: 53vh;
     }
 
     .section1{
