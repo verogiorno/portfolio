@@ -55,7 +55,7 @@ html{
     width: 15rem;
     height: 30rem;
     background: rgba(0, 0, 0, .95);
-    top: 5.5rem;
+    top: 6.5rem;
     right: -100%;
     text-align: center;
     transition: all .5s;
@@ -143,6 +143,7 @@ li a:hover{
     font-weight: lighter;
     display: inline-block;
     position: relative;
+    transition: all 1s;
 }
  
 .aheader:after{
@@ -173,6 +174,7 @@ li a:hover{
     border-radius: 4rem;
     padding: 1.3rem 3.2rem;
     cursor: pointer;
+    transition: all 1s;
 }
 
 .btnheader:hover{
@@ -195,6 +197,7 @@ li a:hover{
     margin-left: 4rem;
     margin-right: 4rem;
     width: 10rem;
+    transition: all 1s;
 }
 
 .inpt1::placeholder{
@@ -261,6 +264,7 @@ input:focus::placeholder{
     font-weight: 600;
     margin-bottom: .8rem;
     width: 40%;
+    transition: all 1s;
 }
 
 .p1{
@@ -279,6 +283,7 @@ input:focus::placeholder{
 .div2sect1{
     display: flex;
     align-items: center;
+    transition: all 1s;
 }
 
 .asec1{
@@ -339,10 +344,12 @@ input:focus::placeholder{
 
 .div3sect1 h1::after{
     bottom: -8.6rem;
+    transition: all 1s;
 }
 
 .div3sect1 h1::before{
     top: -8.6rem;
+    transition: all 1s;
 }
 
 .div3sect1 img{
@@ -388,18 +395,22 @@ input:focus::placeholder{
 
 .cp1{
     left: 5.5%;
+    transition: all 1s;
 }
 
 .cp2{
     margin-left: 16rem;
+    transition: all 1s;
 }
 
 .cp3{
     margin-left: 32rem;
+    transition: all 1s;
 }
 
 .cp4{
     margin-left: 48rem;
+    transition: all 1s;
 }
 
 .pc1, .pc2{
@@ -470,6 +481,7 @@ width: 9rem;
     position: relative;
     left: -1rem;
     top: -10.5rem;
+    transition: all 1s;
 }
 
 .s2h3{
@@ -498,13 +510,15 @@ width: 9rem;
     font-size: 3.5em;
     margin-bottom: 1rem;
     line-height: 5rem;
-    width: 80%; 
+    width: 80%;
+    transition: all 1s; 
 }
 
 .s2divdrc p{
     font-size: 1.4em;
     width: 80%;
     font-weight: bold;
+    transition: all 1s;
 }
 
 /* Section 3 */
@@ -791,6 +805,7 @@ width: 9rem;
     background-size: 39vh;
     background-color: #333333;
     background-position: right 15% top 25%;
+    transition: all 1s;
 }
 
 .divocnts5{
@@ -942,21 +957,21 @@ width: 9rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     padding-top: 1.5rem;
 }
 
+.conts7{
+    width: 100%;
+    margin: auto;
+}
+
 .conts7top{
-    width: 79%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2.5rem;
     margin-top: 0rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 1rem;
+    text-align: center;
 }
 
 .conts7top h1{
@@ -966,57 +981,58 @@ width: 9rem;
 
 .conts7top p{
     font-size: 1.5em;
-    width: 60%;
+    width: 90%;
+    margin: auto;
     text-align: center;
     margin-bottom: 3rem;
 }
 
 .conts7mid{
-    width: 70%;
+    width: 60%;
+    margin: auto;
     display: flex;
-    justify-content: space-evenly;
-    border-radius: 1rem;
+    gap: 8.8%;
 }
+
+.conts7mid input{
+    background-color: #474747;
+    color: white;
+    border: 0.0625rem solid #919190;
+    font-size: 1.5em;
+    padding: 1.2rem 1rem 1.2rem 1rem;
+    border-radius: .8rem;
+    margin-bottom: 2rem;
+    transition: all 1s;
+    width: 100%;
+}
+
+.left-form, .right-form{
+    width: 44%;
+    display: flex;
+    flex-direction: column;
+}
+
 
 .conts7mid p{
     font-size: 1.5em;
 }
 
-.conts7bot{
-    width: 70%;
-    margin: auto;
-    margin-top: 2.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.section7 input{
-    background-color: #474747;
-    color: white;
-    border: 0.0625rem solid #919190;
-}
-
-.conts7mid input{
-    width: 35rem;
-    font-size: 1.5em;
-    padding: 1.2rem 1rem 1.2rem 1rem;
-    border-radius: .8rem;
-    margin-bottom: 2rem;
-}
-
 .inpt-message{
+    display: flex;
+    justify-content: center;
     background-color: #474747;
     color: white;
     border: 0.0625rem solid #919190;
-    width: 91%;
+    width: 59%;
+    margin: auto;
     height: 13rem;
     font-size: 1.5em;
     padding: 2rem 0rem 0rem 1rem;
     border-radius: 1rem;
-    text-align: left;
     resize: none;
+    margin-top: 2.5rem;
     margin-bottom: 6rem;
+    transition: all 1s;
 }
 
 .inpt-message:focus-within{ 
@@ -1141,6 +1157,7 @@ width: 9rem;
         width: 60%;
         margin: auto;
         margin-bottom: 3rem;
+        transition: all 1s;
     }
 
     .divconts3-hidden{
@@ -1171,47 +1188,24 @@ width: 9rem;
     /* Section 2 */
     .lineaboutme{
         top: -13rem;
-    }
-
-    /* Section 7 */
-    .inpt-message{
-        width: 92%;
-    }
-}
-
-@media screen and (max-width: 1880px){
-    /* Section 7 */
-    .inpt-message{
-        width: 93%;
+        transition: all 1s;
     }
 }
 
 @media screen and (max-width: 1848px){
     /* Section 2 */
     .lineaboutme{
-        top: -14rem; 
+        top: -14rem;
+        transition: all 1s; 
     }
-    
-    /* Section 7 */
-.conts7mid input{
-    width: 30rem;
-}
-
-.inpt-message{
-    /* Section 7 */
-    width: 85%;
-}
 
 }
 
 @media screen and (max-width: 1770px){
     /* Section 2 */
     .lineaboutme{
-        top: -15rem; 
-    }
-    /* Section 7 */
-    .inpt-message{
-        width: 88%;
+        top: -15rem;
+        transition: all 1s; 
     }
 }
 
@@ -1226,19 +1220,16 @@ width: 9rem;
 @media screen and (max-width: 1723px){
     /* Section 2 */
     .lineaboutme{
-        top: -16rem; 
+        top: -16rem;
+        transition: all 1s; 
     }
 }
 
 @media screen and (max-width: 1677px){
     /* Section 2 */
     .lineaboutme{
-        top: -17rem; 
-    }
-
-    /* Section 7 */
-    .inpt-message{
-        width: 91%;
+        top: -17rem;
+        transition: all 1s; 
     }
 }
 
@@ -1256,7 +1247,8 @@ width: 9rem;
 @media screen and (max-width: 1630px){
     /* Section 2 */
     .lineaboutme{
-        top: -18rem; 
+        top: -18rem;
+        transition: all 1s; 
     }
 
     /* Section 4 */
@@ -1281,20 +1273,23 @@ width: 9rem;
 
     .lineaboutme{
         top: -15rem;
+        transition: all 1s;
     }
 }
 
 @media screen and (max-width: 1593px){
     /* Section 2 */
     .lineaboutme{
-        top: -16rem; 
+        top: -16rem;
+        transition: all 1s; 
     }
 }
 
 @media screen and (max-width: 1581px){
     /* Section 2 */
     .lineaboutme{
-        top: -18.5rem; 
+        top: -18.5rem;
+        transition: all 1s; 
     }
 }
 
@@ -1315,6 +1310,7 @@ width: 9rem;
         position: relative;
         left: 11rem;
         top: -3rem;
+        transition: all 1s;
     }
 
     .section2{
@@ -1328,6 +1324,7 @@ width: 9rem;
         display: flex;
         flex-direction: column;
         align-items: center;
+        transition: all 1s;
     }
 
     .s2divdrc h1{
@@ -1345,16 +1342,30 @@ width: 9rem;
         font-size: 1.1em;
         margin-left: 0rem;
         margin-right: 1rem;
+        transition: all 1s;
     }
 
     .btnheader{
-        font-size: 1.1em; 
+        font-size: 1.1em;
+        transition: all 1s; 
     }
 
     .aheader{
         font-size: 1.1em;
         margin-right: 0rem;
         margin-left: 1rem;
+        transition: all 1s;
+    }
+
+    /* Section 1 */
+    .div2sect1{
+        margin-bottom: 5rem;
+        transition: all 1s;
+    }
+
+    .section1 h1{
+        line-height: 4rem;
+        transition: all 1s;
     }
 
     /* Section 4 */
@@ -1363,33 +1374,18 @@ width: 9rem;
         font-size: 1.1em;
     }
 
-    .div2sect1{
-        margin-bottom: 5rem
-    }
-
-    .section1 h1{
-        line-height: 4rem;
-    }
-
     /* Section 5 */
     .section5{
         background-position: right -1% top 25%;
-    }
-
-    /* Section 7 */
-    .conts7mid input{
-        width: 25rem;
-    }
-
-    .inpt-message{
-        width: 87%;
+        transition: all 1s;
     }
 }
 
 @media screen and (max-width: 1457px){
     /* Section 2 */
     .lineaboutme{
-        top: -4rem; 
+        top: -4rem;
+        transition: all 1s; 
     }
 }
 
@@ -1432,15 +1428,6 @@ width: 9rem;
     .s5-cont-lista{
         width: fit-content;
     }
-
-    /* Section 7 */
-    .conts7mid input{
-        width: 20rem;
-    }
-
-    .inpt-message{
-        width: 83%;
-    }
 }
 
 @media screen and (max-width: 1270px){
@@ -1454,14 +1441,16 @@ width: 9rem;
         display: flex;
         flex-direction: column; 
         align-items: center;
+        transition: all 1s;
     }
     
     .subdivconts3-1h, .subdivconts3-3h{
-        display: block; 
+        display: block;
         }
 
     .subdivconts3-1h, .subdivconts3-2h{
     margin-bottom: 10rem;
+    transition: all 1s;
     }
 }
 
@@ -1498,6 +1487,7 @@ width: 9rem;
         content: '';
         width: 7.5rem;
         right: -2.2rem;
+        transition: all 1s;
     }
     
     .div3sect1 h1::after{
@@ -1513,14 +1503,17 @@ width: 9rem;
     /* Mid Section */
     .cp2{
         display: none;
+        transition: all 1s;
     }
        
     .cp3{
         margin-left: 20rem;
+        transition: all 1s;
     }
        
     .cp4{
         margin-left: 40rem;
+        transition: all 1s;
     }
 }
 
@@ -1544,14 +1537,6 @@ width: 9rem;
 
     .reviews p{
         font-size: .9em;
-    }
-    /* Section 7 */
-    .conts7mid input{
-        width: 15rem;
-    }
-
-    .inpt-message{
-        width: 78%;
     }
 }
 
@@ -1801,12 +1786,14 @@ width: 9rem;
         margin-bottom: 1rem;
         line-height: 5rem;
         width: fit-content;
+        transition: all 1s;
     }
 
     .s2divdrc p{
         font-size: 1.2em;
         width: fit-content;
         font-weight: lighter;
+        transition: all 1s;
     }
 
     /* Section 7 */
@@ -1911,11 +1898,6 @@ width: 9rem;
     .conts6{
         width: 40%;
     }
-
-        /* Section 7 */
-        .inpt-message{
-            width: 90%;
-        }
 }
 
 @media screen and (max-width: 445px){
