@@ -1119,40 +1119,11 @@ width: 9rem;
 }
 
 /* Sector Media Queries */
-@media screen and (min-width: 768px) and (max-width:1024px){
-    /* header */
-    nav, .inpt1, .btnheader{
-        display: none;
-       }
-       
-    .burger{
-        display: block;
-       }
-
-    .header-container{
-        display: flex;
-        justify-content:space-between;
-        align-items: center;
-        margin: auto;
-    }
-}
-
 @media screen and (min-width: 390px) and (max-width:1200px){
     /* header */
     .header-container{
-        display: flex;
-        justify-content:space-between;
-        align-items: center;
-        margin: auto;
+        width: 90%;
     }
-
-    nav, .inpt1, .btnheader{
-        display: none;
-    }
-       
-    .burger{
-        display: block;
-    } 
 
     /* Section 1 */
     .p1{
@@ -1160,7 +1131,7 @@ width: 9rem;
     }
 }
 
-@media screen and (max-width: 1919px) {
+@media screen and (max-width: 1919px){
     /* Section 3 */
     .subdivconts3-2{
         display: none;
@@ -1362,13 +1333,30 @@ width: 9rem;
     .s2divdrc h1{
         margin-bottom: 2rem; 
     }
-
 }
 
 @media screen and (max-width: 1500px){
-    /* Section 1 */
+    /* Header */
+    .header-container{
+        width: 100%;
+    }
 
-    
+    .inpt1{
+        font-size: 1.1em;
+        margin-left: 0rem;
+        margin-right: 1rem;
+    }
+
+    .btnheader{
+        font-size: 1.1em; 
+    }
+
+    .aheader{
+        font-size: 1.1em;
+        margin-right: 0rem;
+        margin-left: 1rem;
+    }
+
     /* Section 4 */
     .contcards a{
         padding: .9rem 1.7rem;
@@ -1419,10 +1407,6 @@ width: 9rem;
         font-size: 1.1em;
     }
 }
-
-@media screen and (max-width: 1300px){
-
-    
 
 @media screen and (max-width: 1300px){
     /* Section 3 */
@@ -1568,6 +1552,26 @@ width: 9rem;
 
     .inpt-message{
         width: 78%;
+    }
+}
+
+@media screen and (max-width:1024px){
+    /* header */
+    nav, .inpt1, .btnheader{
+        display: none;
+       }
+       
+    .burger{
+        display: block;
+       }
+
+    .header-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        max-width: 64rem;
+        margin: auto;
     }
 }
 
@@ -1729,24 +1733,7 @@ width: 9rem;
 }
 
 @media screen and (max-width: 767px){
-    /* header */
-    .header-container{
-        width: 90%;
-        display: flex;
-        justify-content:space-between;
-        align-items: center;
-        margin: auto;
-    }
-
-    nav, .inpt1, .btnheader{
-        display: none;
-    }
-       
-    .burger{
-        display: block;
-    }
-
-    /* Section 1 */
+ /* Section 1 */
     .section1{
     background: linear-gradient( to bottom,
         rgba(12, 12, 12, 1) 30%,
