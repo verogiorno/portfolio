@@ -29,7 +29,6 @@ html{
     z-index: 99;
     padding: 1rem 0 1rem 0;
     height: 4.5rem;
-    
 }
 
 .header-container{
@@ -1065,7 +1064,8 @@ width: 9rem;
 .contsfooter{
     width: 90%;
     margin: auto;
-    padding: 6rem;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
 }
 
 .subs{
@@ -1128,8 +1128,6 @@ width: 9rem;
        }
 
     .header-container{
-        width: 90%;
-        max-width: 47.9375rem;
         display: flex;
         justify-content:space-between;
         align-items: center;
@@ -1140,8 +1138,6 @@ width: 9rem;
 @media screen and (min-width: 390px) and (max-width:1200px){
     /* header */
     .header-container{
-        width: 90%;
-        max-width:  75rem;
         display: flex;
         justify-content:space-between;
         align-items: center;
@@ -1727,7 +1723,6 @@ width: 9rem;
     /* header */
     .header-container{
         width: 90%;
-        max-width: 47.9375rem;
         display: flex;
         justify-content:space-between;
         align-items: center;
@@ -1750,7 +1745,6 @@ width: 9rem;
     .section1{
         height: 100vh;
         width: 100%;
-        max-width: 47.9375rem;
         margin: auto;
     }
 
