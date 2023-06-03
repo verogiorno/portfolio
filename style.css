@@ -168,10 +168,10 @@ li a:hover{
 .btnheader{
     text-decoration: none;
     color: white;
-    font-size: 1.3em; 
     background-color: #5F9BF5;
     border: 0.0625rem solid #5F9BF5;
     border-radius: 4rem;
+    font-size: 1.3em; 
     padding: 1.3rem 3.2rem;
     cursor: pointer;
     transition: all 1s;
@@ -292,9 +292,9 @@ input:focus::placeholder{
     background-color: #333333;
     color: white;
     padding: 2rem 4.7rem;
+    font-size: 1.4em;
     font-weight: bold;
     margin-right: 2rem;
-    font-size: 1.4em;
     cursor: pointer;
     box-shadow: 0rem 3.2rem 3rem #222222;
     text-decoration: none; 
@@ -302,11 +302,11 @@ input:focus::placeholder{
 
 .div2sect1 .bi{
     font-size: 2.9em;
+    padding: 1.1rem 1.7rem;
     border: 0.0625rem solid white;
     border-radius: 100%;
     background-color: #333333;
     color: white; 
-    padding: 1.1rem 1.7rem;
     cursor: pointer;
     box-shadow: 0rem 3.2rem 3rem #222222; 
 }
@@ -377,11 +377,14 @@ input:focus::placeholder{
     margin: auto;
 }
 
+.circulos p{
+    font-size: 1.8em;
+}
+
 .cp1, .cp2, .cp3, .cp4{
     display: flex;
     justify-content: center;
     color: white;
-    font-size: 1.8em;
     font-weight: bold;
     text-align: center;
     width: 11rem;
@@ -391,6 +394,7 @@ input:focus::placeholder{
     position: absolute;
     padding: 4.5rem 2rem;
     z-index: 4;
+    transition: all 1s;
 }
 
 .cp1{
@@ -1012,7 +1016,6 @@ width: 9rem;
     flex-direction: column;
 }
 
-
 .conts7mid p{
     font-size: 1.5em;
 }
@@ -1346,12 +1349,13 @@ width: 9rem;
     }
 
     .btnheader{
-        font-size: 1.1em;
+        font-size: 1.1em; 
+        padding: 1.1rem 3rem;
         transition: all 1s; 
     }
 
     .aheader{
-        font-size: 1.1em;
+        font-size: 1.1m; 
         margin-right: 0rem;
         margin-left: 1rem;
         transition: all 1s;
@@ -1430,9 +1434,205 @@ width: 9rem;
     }
 }
 
+@media screen and (max-width: 1280px){
+    /* Section 1 */
+    .asec1{
+        font-size: 1.1em;
+        padding: 1.9rem 4.4rem;
+    }
+
+    .div2sect1 .bi{
+        font-size: 2.7em;
+        padding: .9rem 1.5rem;
+    }
+
+    .section1 h2{
+        font-size: 1.4em;
+    }
+    
+    .section1 h1{
+        font-size: 3.7em;
+    }
+    
+    .p1{
+        font-size: 1.1em;
+    }
+    
+    .div3sect1 h1{
+        font-size: 1.6em;
+        transition: all 1s;
+    }
+    /* Mid Section */
+    .cp1, .cp2, .cp3, .cp4{
+        width: 9rem;
+        padding: 4.3rem 1.8rem;
+        transition: all 1s;
+    }
+
+    .circulos p{
+        font-size: 1.4em;
+    }
+
+    /* Section 2 */
+    .s2h3{
+        font-size: 1.2em;
+    }
+    
+    .s2divizq h2{
+        font-size: 1.8em;
+    }
+    
+    .s2divdrc h1{
+        font-size: 3.3em;
+        line-height: 4.8rem;
+        transition: all 1s; 
+    }
+    
+    .s2divdrc p{
+        font-size: 1.2em;
+        font-weight: lighter;
+        transition: all 1s;
+    }
+    /* Section 3 */
+    .s3divbot h2{
+        font-size: 1.2em;
+    }
+
+    .s3divbot h1{
+        font-size: 3.1em;
+    }
+
+    .s3divbot p{
+        font-size: 1.1em;
+    }
+
+    .divconts3 h3, .divconts3-hidden h3{
+        font-size: 1.5em;
+    }
+
+    .divconts3 p, .divconts3-hidden p{
+        font-size: 1.2em;
+    }
+
+    .s3btn a{
+        font-size: 1.3em;
+        padding: 1.2rem 4.1rem;
+    }   
+
+    .s3i1, .s3i2, .s3i3{
+        width: 5rem;
+    }
+
+    .s3icons1, .s3icons2, .s3icons3, .subdivconts3-2h .s3icons2{
+        padding: 3.3rem 1.8rem;
+        width: 8rem;
+        left: 32%;
+    }
+    /* Section 4 */
+    .conts4 h1{
+        font-size: 3.2em;
+    }
+    
+    .s4p1{
+        font-size: 1.2em;
+        font-weight: lighter;
+    }
+    .s4btn a{
+        font-size: 1.3em;
+        padding: 1.2rem 4rem;
+    
+    }
+    /* Section 5 */
+    .divocnts5 h1{
+        font-size: 2.8em;
+    }
+
+    .divocnts5 h2{
+        font-size: 1.1em;
+    }
+
+    .s5p{
+        font-size: 1.1em;
+    }
+
+    .skills{
+        font-size: 1.1em;
+    }
+
+    .s5-list-items1, .s5-list-items2, .s5-list-items3, .s5-list-items4{
+        font-size: 2.1em; 
+        padding: 2.3rem 1.8rem;
+        width: 5rem;
+    }
+
+    .s5btn a{
+        font-size: 1.3em;
+        padding: 1.2rem 4rem;
+    }
+
+    /* Section 6 */
+    .conts6 h1{
+        font-size: 2.8em;
+    }
+    
+    .conts6 p{
+        font-size: 1.5em;
+    }
+    
+    .s6btn a{
+        font-size: 1.3em;
+        padding: 1.2rem 4rem;
+    }
+    
+    /* Section 7 */
+    .conts7top h1{
+        font-size: 2.5em;
+    }
+    
+    .conts7top p{
+        font-size: 1.3em;
+        width: fit-content;
+    }
+    
+    .conts7mid input{
+        font-size: 1.3em;
+        padding: 1.2rem 1rem 1.2rem 1rem;
+        transition: all 1s;
+    }
+    
+    .conts7mid p{
+        font-size: 1.3em;
+    }
+    
+    .inpt-message{
+        height: 13rem;
+        font-size: 1.5em;
+        padding: 2rem 0rem 0rem 1rem;
+        transition: all 1s;
+    }
+    
+    .s7btn a{
+        font-size: 1.3em;
+        padding: 1.2rem 4rem;
+    }
+    
+    /* Footer */
+    .subs h2{
+        font-size: 2.4em;
+    }
+    
+    .subs p{
+        font-size: 1.3em;
+    }
+    
+    .div-socialmedia img, .div-socialmediah img{
+        width: 2.1rem;
+        padding: .5rem .5rem;
+    }
+}
+
 @media screen and (max-width: 1270px){
     /* Section 3 */
-    
     .divconts3{
         display: none;
     }
@@ -1688,7 +1888,26 @@ width: 9rem;
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
+        margin: auto;
     }
+
+.conts7mid input{
+    width: 90%;
+}
+
+.left-form, .right-form{
+    width: 60%;
+    margin: auto;
+}
+
+.inpt-message{
+    width: 65%;
+    margin: auto;
+    height: 13rem;
+    margin-top: 2.5rem;
+    margin-bottom: 6rem;
+}
 }
 
 @media screen and (max-width: 799px){
@@ -1717,7 +1936,7 @@ width: 9rem;
     }
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 768px){
  /* Section 1 */
     .section1{
     background: linear-gradient( to bottom,
@@ -1742,7 +1961,6 @@ width: 9rem;
     
     .p1{
         margin: 0 2rem 5rem 2rem;
-        font-size: 1.2em;
     }
 
     .div2sect1{
@@ -1756,13 +1974,22 @@ width: 9rem;
     .gradient{
     display: none;
     }
-
-    .asec1{
-        font-size: 1.1em;
-    }
     
     .div2sect1 .bi{
         font-size: 2.5em;
+    }
+    
+    .section1 h2{
+        font-size: 1.2em;
+    }
+        
+    .section1 h1{
+        font-size: 3.5em;
+    }
+        
+    .div3sect1 h1{
+        font-size: 1.4em;
+        transition: all 1s;
     }
 
     /* Mid Section */
@@ -1781,10 +2008,18 @@ width: 9rem;
         padding-top: 0rem;
     }
 
+    .s2h3{
+        font-size: 1.2em;
+    }
+    
+    .s2divizq h2{
+        font-size: 1.6em;
+    }
+
     .s2divdrc h1{
-        font-size: 3em;
+        font-size: 3.1em;
         margin-bottom: 1rem;
-        line-height: 5rem;
+        line-height: 4.6rem;
         width: fit-content;
         transition: all 1s;
     }
@@ -1792,17 +2027,114 @@ width: 9rem;
     .s2divdrc p{
         font-size: 1.2em;
         width: fit-content;
-        font-weight: lighter;
         transition: all 1s;
+    }
+
+    /* Section 3 */
+    .s3divbot h2{
+        font-size: 1.2em;
+    }
+        
+    .s3divbot h1{
+        font-size: 3em;
+    }
+        
+    .divconts3 h3, .divconts3-hidden h3{
+        font-size: 1.4em;
+    }
+        
+    .divconts3 p, .divconts3-hidden p{
+        font-size: 1.1em;
+    }
+        
+    .s3btn a{
+        font-size: 1.2em;
+        padding: 1.1rem 4rem;
+        }   
+        
+    .s3i1, .s3i2, .s3i3{
+        width: 4rem;
+    }
+        
+    .s3icons1, .s3icons2, .s3icons3, .subdivconts3-2h .s3icons2{
+        padding: 3.1rem 1.6rem;
+        width: 7rem;
+        left: 35%;
+    }
+
+    /* Section 4 */
+    .conts4 h1{
+        font-size: 3em;
+    }
+            
+    .s4p1{
+        font-size: 1.1em;
+        font-weight: lighter;
+    }
+    .s4btn a{
+        font-size: 1.2em;
+        padding: 1.1rem 4rem;
+    }
+        
+    /* Section 5 */
+    .divocnts5 h1{
+        font-size: 2.6em;
+    }
+        
+    .s5-list-items1, .s5-list-items2, .s5-list-items3, .s5-list-items4{
+        font-size: 1.9em; 
+        padding: 2.1rem 1.6rem;
+        width: 4rem;
+    }
+        
+    .s5btn a{
+        font-size: 1.2em;
+        padding: 1.1rem 4rem;
+    }
+        
+    /* Section 6 */
+    .conts6 h1{
+        font-size: 2.6em;
+    }
+            
+    .conts6 p{
+        font-size: 1.3em;
+    }
+            
+    .s6btn a{
+        font-size: 1.2em;
+        padding: 1.1rem 4rem;
     }
 
     /* Section 7 */
     .conts7top h1{
-        font-size: 2.4em;
+        font-size: 2.1em;
     }
     
     .conts7top p{
+        font-size: 1.1em;
+    }
+    .conts7mid p{
+        font-size: 1.1em;
+    }
+    
+    .s7btn a{
         font-size: 1.2em;
+        padding: 1.1rem 4rem;
+    }
+    
+    /* Footer */
+    .subs h2{
+        font-size: 2.2em;
+    }
+    
+    .subs p{
+        font-size: 1.1em;
+    }
+    
+    .div-socialmedia img, .div-socialmediah img{
+        width: 1.9rem;
+        padding: .5rem .5rem;
     }
 }
 
@@ -1840,8 +2172,9 @@ width: 9rem;
         margin-top: 3rem;
     }
 
-    .subdivconts3-1h .s3icons1, .subdivconts3-2h .s3icons2, .subdivconts3-3h .s3icons3{
-        left: 23%;
+    .s3icons1, .s3icons2, .s3icons3, .subdivconts3-2h .s3icons2{
+        left: 29%;
+        top: -17%;
     }
 
     /* Section 5 */
@@ -1893,6 +2226,126 @@ width: 9rem;
     }
 }
 
+@media screen and (max-width: 480px){
+    /* Section 1 */
+    
+    .div2sect1 .bi{
+        font-size: 2.3em;
+        padding: .7rem 1.3rem;
+    }
+
+    .asec1{
+        padding: 1.7rem 4.2rem;
+    } 
+    
+    .section1 h1{
+        font-size: 3.3em;
+    }
+    
+    .div3sect1 h1{
+        font-size: 1.3em;
+        transition: all 1s;
+    }
+
+    /* Section 2 */
+    .s2h3{
+        font-size: 1.2em;
+    }
+
+    .s2divizq h2{
+        font-size: 1.4em;
+    }
+
+    .s2divdrc h1{
+        font-size: 2.8em;
+        line-height: 4.4rem;
+        transition: all 1s;
+    }
+
+    .s2divdrc p{
+        font-size: 1.1em;
+    }
+
+    /* Section 3 */
+    .s3divbot h2{
+        font-size: 1.2em;
+    }
+    
+    .s3divbot h1{
+        font-size: 2.8em;
+    }
+    
+    .divconts3 h3, .divconts3-hidden h3{
+        font-size: 1.3em;
+    }
+    
+    .s3btn a{
+        padding: .9rem 3.8rem;
+    }   
+    
+    .s3i1, .s3i2, .s3i3{
+        width: 3.5rem;
+    }
+    
+    .s3icons1, .s3icons2, .s3icons3, .subdivconts3-2h .s3icons2{
+        padding: 3rem 1.6rem;
+        width: 6rem;
+        left: 31%;
+        top: -15%;
+    }
+
+    /* Section 4 */
+    .conts4 h1{
+        font-size: 2.8em;
+    }
+        
+    .s4btn a{
+        padding: .9rem 3.8rem;
+    }
+    
+    /* Section 5 */
+    .divocnts5 h1{
+        font-size: 2.4em;
+    }
+    
+    .s5-list-items1, .s5-list-items2, .s5-list-items3, .s5-list-items4{
+        font-size: 1.7em; 
+        padding: 1.9rem 1.4rem;
+        width: 3.8rem;
+    }
+    
+    .s5btn a{
+        padding: .9rem 3.8rem;
+    }
+    
+    /* Section 6 */
+    .conts6 h1{
+        font-size: 2.4em;
+    }
+        
+    .conts6 p{
+        font-size: 1.1em;
+    }
+        
+    .s6btn a{
+        padding: .9rem 3.8rem;
+    }
+
+    /* Section 7 */
+    .conts7top h1{
+        font-size: 1.9em;
+    }
+
+    .s7btn a{
+        padding: .9rem 3.8rem;
+    }
+
+    /* Footer */
+    .subs h2{
+        font-size: 2em;
+    }
+}
+
 @media screen and (max-width: 460px){
     /* Section 6 */
     .conts6{
@@ -1921,19 +2374,14 @@ width: 9rem;
         display: flex;
         justify-content: center;
         }
-    
-    .asec1{
-        font-size: 1.4em;
-        }
     }
-
 @media screen and (max-width: 420px){
     /* Section 3 */
     .s3cards{
         width: 18rem;
     }
 
-    .subdivconts3-1h .s3icons1, .subdivconts3-2h .s3icons2, .subdivconts3-3h .s3icons3{
-        left: 20%;
+    .s3icons1, .s3icons2, .s3icons3, .subdivconts3-2h .s3icons2{
+        left: 30%;
     }
 }
