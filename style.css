@@ -352,12 +352,12 @@ input:focus::placeholder{
 }
 
 .div3sect1 h1::after{
-    bottom: -8.6rem;
+    bottom: -8.5rem;
     transition: all 1s;
 }
 
 .div3sect1 h1::before{
-    top: -8.6rem;
+    top: -8.5rem;
     transition: all 1s;
 }
 
