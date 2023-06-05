@@ -53,12 +53,15 @@ html{
 .nav-menu{
     position: fixed;
     width: 15rem;
-    height: 30rem;
-    background: rgba(0, 0, 0, .95);
+    height: 25.5rem;
+    background-color: #0c0c0c;
+    border-left: 1px solid #5F9BF5;
+    border-bottom: 1px solid #5F9BF5;
     top: 6.5rem;
     right: -100%;
     text-align: center;
     transition: all .5s;
+    border-radius: 0rem 0rem 0rem 2rem;
 }
 
 .nav-menu li{
@@ -100,6 +103,11 @@ li a:hover{
     color: white;
     font-size: 2.5em;
     cursor: pointer;
+}
+
+.burger-btn:hover{
+    color: #5F9BF5;
+    transition: .5s;
 }
 
 .ronnie{
